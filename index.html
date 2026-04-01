@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Page title here</title>
+
+        <!-- insert your SEO <meta> tags here -->
+
+        <link id="theme" rel="stylesheet" href="resources/stylesheets/theme1.css">
+        <script src="resources/js/main.js"></script>
+
+        <script>
+            // Theme picker. Feel free to remove this when you choose your favorite theme
+            function toggleTheme(theme_value) {
+                let sheet = document.getElementsByTagName('link');
+                sheet[0].href = theme_value;
+            }
+        </script>
+
+        <link rel="icon" href="favicon.ico"> <!-- name desired icon "favicon.ico" and place it in this directory -->
+    </head>
+    <body>
+        <table width="1000px" cellspacing="0" id="main">
+            <tr>
+                <td width="25%" rowspan="100%" valign="top" class="sidebar">
+                    <img src="resources/images/filename.png" border="1" width="100%" height="80">
+                    ^^^ replace this (and this text) with your logo<br><br>
+                    
+                    <a href="">HOME</a><br>
+                    <a href="putpagenamehere">LINK 1</a><br>
+                    <a href="putpagenamehere">LINK 2</a><br>
+                    <a href="putpagenamehere">LINK 3</a><br>
+                    <a href="putpagenamehere">LINK 4</a><br>
+                    
+                </td>
+                <td valign="top" colspan="2" class="header">
+                    <h1>Insert banner image here</h1>
+                    <p>Padding here is 0, so you can replace all this text with just about any banner image with a width of 750 pixels and any height (preferably 200-400 pixels)</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" rowspan="3" valign="top" class="body"> <!-- change rowspan when adding or subtracting "other-sidebar" cells -->
+                    <h1>INDIE WEB BASE</h1>
+                    <p>This template is a quick starting point for creating your own personal website on the indie web. This is designed to mimick a common layout I see across many indie websites, complete with several themes (below) for you to choose from.</p>
+                    <button onclick="toggleTheme('resources/stylesheets/theme1.css')">DEFAULT</button>
+                    <button onclick="toggleTheme('resources/stylesheets/theme2.css')">SPACE2001</button>
+                    <button onclick="toggleTheme('resources/stylesheets/theme3.css')">HACKERS</button>
+                    <button onclick="toggleTheme('resources/stylesheets/theme4.css')">HORROR</button>
+                    <p>Please note that this template is not yet responsive, so if that may be an issue, I reccommend making a separate mobile version with identical content, or attempting to turn this into some kind of responsive layout</p>
+
+                    <h2>Heading 2</h2>
+                    <p>Lorem ipsum dolor sit amet, <a href="putwebsiteurlhere" target="_blank">consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut <a href="putwebsiteurlhere" target="_blank">labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Heading 3</h3>
+                    <p>Lorem ipsum <a href="putwebsiteurlhere" target="_blank">dolor sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="putwebsiteurlhere" target="_blank">Duis</a> aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <a href="putwebsiteurlhere" target="_blank">mollit anim</a> id est laborum.</p>
+                </td>
+                <td width="25%" valign="top" class="other-sidebar">
+                    other sidebar
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" valign="top" class="other-sidebar">
+                    other sidebar
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" valign="top" class="other-sidebar">
+                    other sidebar
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" colspan="2" colspan="100%" valign="top" class="footer">
+                    Cool footer text, copyright info if applicable, stuff and things
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="50%">
+                                <ul>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                </ul>
+                            </td>
+                            <td valign="top" width="50%">
+                                <ul>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                    <li><a href="putpagenamehere">Link</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
