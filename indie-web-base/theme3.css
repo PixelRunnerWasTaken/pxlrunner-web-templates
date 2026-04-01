@@ -1,0 +1,196 @@
+
+/* HACKERS */
+
+@keyframes scanline {
+    from {
+        background-image: repeating-linear-gradient(#0008, #0208 2px), linear-gradient(to right, #000, #020, #000);
+        background-size: 100% 2px;
+    }
+    to {
+        background-image: repeating-linear-gradient(#0208, #0008 2px), linear-gradient(to right, #000, #020, #000);
+        background-size: 100% 2px;
+    }
+}
+
+@keyframes subtle-scanline {
+    from {
+        background-image: repeating-linear-gradient(#0006, #0206 2px), linear-gradient(to right, #0006, #0206, #0006);
+        background-size: 100% 2px;
+    }
+    to {
+        background-image: repeating-linear-gradient(#0206, #0006 2px), linear-gradient(to right, #0006, #0206, #0006);
+        background-size: 100% 2px;
+    }
+}
+
+@font-face {
+	font-family: 'ocr-a';
+	src: URL('../fonts/OCRAEXT.TTF') format('truetype');
+}
+
+body {
+	margin-left: 200px;
+	margin-top: 100px;
+	background: #000;
+	font-family: ocr-a, monospace;
+	font-size: 12pt;
+	background-image: linear-gradient(to right, #020, #000 200px);
+}
+
+a {
+	color: #0f0;
+	text-shadow: -4px 0 2px #0f04, 4px 0 2px #0f04;
+}
+
+a:hover {
+	color: #fff;
+	text-shadow: -1px 0 1px #0f08, -10px 0 2px #0f08, 1px 0 1px #0f08, 10px 0 2px #0f08;
+}
+
+a:active {
+	color: #f00;
+	text-shadow: -20px 0 2px #f008, 20px 0 2px #f008;
+}
+
+p {
+	font-family: monospace;
+}
+
+.body h1 {
+	color: #fff8;
+	text-shadow: -2px 0 2px #0f08, 2px 0 2px #0f08, -8px 0 8px #0f04, 8px 0 8px #0f04;
+	font-style: italic;
+}
+
+.body h2 {
+	color: #0f0;
+	font-style: italic;
+}
+
+.body h3 {
+	font-style: italic;
+}
+
+.sidebar {
+	animation-name: scanline;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	color: white;
+	padding: 10px;
+	box-shadow: inset 50px 0 25px 25px black, inset 50px 0 0 25px #0f0;
+}
+
+.header {
+	padding: 0px;
+	background: #000;
+	animation-name: scanline;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	box-shadow: 0 0 5px #0f0;
+	color: white;
+}
+
+.body {
+	background: #000;
+	animation-name: subtle-scanline;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	padding: 10px;
+	color: white;
+}
+
+.other-sidebar {
+	padding: 10px;
+	background: #080;
+	animation-name: subtle-scanline;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	color: white;
+}
+
+.footer {
+	padding: 10px;
+	background: #000;
+	animation-name: scanline;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	box-shadow: 0 0 5px #0f0;
+	color: white;
+}
+
+.sidebar a {
+	display:block;
+	color: #fff8;
+	text-shadow: -2px 0 4px #0f08, 2px 0 4px #0f08, -4px 0 2px black, 4px 0 2px black;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 15pt;
+	width: 200px;
+	padding: 10px;
+	margin-top: 20px;
+	background: #888;
+	animation-name: subtle-scanline;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	border: 2px solid;
+	border-color: #fff #000 #000 #fff;
+	box-shadow: -2px 0 2px 1px #0f02, 2px 0 2px 1px #0f02;
+	transition: .2s;
+	transition-timing-function: linear;
+}
+
+.sidebar a:hover {
+	color: #ffff;
+	text-shadow: -1px 0 1px #fff, 1px 0 1px #fff, -2px 0 2px #0f08, 2px 0 2px #0f08, -4px 0 6px #0f08, 4px 0 6px #0f08, -6px 0 4px black, 6px 0 4px black;
+	background: #aaa;
+	box-shadow: -4px 0 4px 0 #0f04, 4px 0 4px 0 #0f04;
+}
+
+.sidebar a:active {
+	color: #0f08;
+	text-shadow: -1px 0 0 #0f08, 1px 0 0 #0f08, -4px 0 2px black, 4px 0 2px black;
+	background: #444;
+	border-color: #000 #888 #888 #000;
+}
+
+button {
+	color: #fff8;
+	text-shadow: -2px 0 2px #0f08, 2px 0 2px #0f08, -3px 0 1px black, 3px 0 1px black;
+	text-align: center;
+	font-family: ocr-a, monospace;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 10pt;
+	width: 88px;
+	height: 31px;
+	background: #888;
+	animation-name: subtle-scanline;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	border: 2px solid;
+	border-color: #fff #000 #000 #fff;
+	box-shadow: -2px 0 2px 1px #0f02, 2px 0 2px 1px #0f02;
+}
+
+button:hover {
+	color: #ffff;
+	text-shadow: 0 0 1px #fff, -1px 0 1px #0f08, 1px 0 1px #0f08, -3px 0 3px #0f08, 3px 0 3px #0f08, -4px 0 2px black, 4px 0 2px black;
+	background: #aaa;
+	box-shadow: -4px 0 4px 0 #0f04, 4px 0 4px 0 #0f04;
+}
+
+button:active {
+	color: #0f08;
+	text-shadow: -1px 0 0 #0f08, 1px 0 0 #0f08, -2px 0 1px black, 2px 0 1px black;
+	background: #444;
+	border-color: #000 #888 #888 #000;
+}

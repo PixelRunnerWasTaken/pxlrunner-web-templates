@@ -1,0 +1,137 @@
+
+/* HORROR */
+
+body {
+	margin-left: 200px;
+	margin-top: 100px;
+	background: #100;
+	background-image: linear-gradient(to right, #200, #000 200px);
+	font-family: garamond, serif;
+	font-size: 12pt;
+}
+
+a {
+	color: #f88;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a:active {
+	color: #f00;
+}
+
+.body h1 {
+	color: #f00;
+	text-shadow: 2px 2px black;
+	font-family: garamond;
+	font-size: 35pt;
+}
+
+.body h2 {
+	color: #f00;
+	font-family: garamond, serif;
+	font-size: 25pt;
+}
+
+.body h3 {
+	font-family: garamond, serif;
+	font-size: 20pt;
+}
+
+.sidebar {
+	background: #400;
+	color: white;
+	padding: 10px;
+}
+
+.header {
+	padding: 0px;
+	color: white;
+	background-image: linear-gradient(#000, #800, #000);
+	box-shadow: inset 0 0 25px #800;
+}
+
+.body {
+	background: #222;
+	border: 4px outset #111;
+	padding: 10px;
+	color: white;
+}
+
+.other-sidebar {
+	padding: 10px;
+	background: #800;
+	border: 4px outset #600;
+	color: white;
+}
+
+.footer {
+	padding: 10px;
+	background: black;
+	color: white;
+}
+
+.other-sidebar a, .footer a{
+	color: #f00;
+}
+
+.other-sidebar a:hover, .footer a:hover {
+	color: #f88;
+}
+
+.other-sidebar a:active, .footer a:active {
+	color: #800;
+}
+
+.sidebar a {
+	display:block;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	width: 200px;
+	padding: 10px;
+	margin-top: 20px;
+	background: #800;
+	border: 2px solid;
+	border-color: #f00 #000 #000 #f00;
+	box-shadow: 0 0 0 1px black;
+}
+
+.sidebar a:hover {
+	background: #a00;
+}
+
+.sidebar a:active {
+	background: #400;
+	border-color: #000 #800 #800 #000;
+}
+
+button {
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	text-align: center;
+	font-family: garamond, serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 10pt;
+	width: 88px;
+	height: 31px;
+	background: #800;
+	border: 2px solid;
+	border-color: #f00 #000 #000 #f00;
+	box-shadow: 0 0 0 1px black;
+}
+
+button:hover {
+	background: #a00;
+}
+
+button:active {
+	background: #400;
+	border-color: #000 #800 #800 #000;
+}
